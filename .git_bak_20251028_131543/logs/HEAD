@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 fb140ef676208ef91c0650a4ec2aa9db2e5ea370 Rich Goodman <youremail@example.com> 1761670642 -0400	commit (initial): Organized n8n workflows by category
+fb140ef676208ef91c0650a4ec2aa9db2e5ea370 c256cb03542d769ffed5f1a48e57c08fd7373ebd Rich Goodman <youremail@example.com> 1761671070 -0400	pull --rebase origin main (start): checkout c256cb03542d769ffed5f1a48e57c08fd7373ebd
+c256cb03542d769ffed5f1a48e57c08fd7373ebd 2bf3e4f7ec77c90e1a9d6ed38f065109443f402a Rich Goodman <youremail@example.com> 1761671073 -0400	pull --rebase origin main (pick): Organized n8n workflows by category
+2bf3e4f7ec77c90e1a9d6ed38f065109443f402a 2bf3e4f7ec77c90e1a9d6ed38f065109443f402a Rich Goodman <youremail@example.com> 1761671073 -0400	pull --rebase origin main (finish): returning to refs/heads/main
