@@ -166,7 +166,7 @@
       },
       "credentials": {
         "youTubeOAuth2Api": {
-          "id": "alrF3L4QeYVd4Ckn",
+          "id": "YOUR-YT-ID",
           "name": "YouTube account"
         }
       },
@@ -484,7 +484,7 @@
             },
             {
               "name": "key",
-              "value": "AIzaSyARU7upVG5hzoaMHIMaBEXjcYtayo8vPJ4"
+              "value": "YOUR-KEY-HERE"
             }
           ]
         }

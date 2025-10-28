@@ -1,67 +1,60 @@
 {
+  "name": "My workflow 3",
   "nodes": [
     {
+      "parameters": {
+        "url": "https://www.googleapis.com/customsearch/v1?imgType=photo&key=YOUR-KEY-HERE=e51ced3f3563dfac9&q=street&searchType=image",
+        "options": {}
+      },
       "name": "HTTP Request1",
       "type": "n8n-nodes-base.httpRequest",
       "position": [
-        500,
-        540
+        0,
+        0
       ],
-      "parameters": {
-        "url": "https://www.googleapis.com/customsearch/v1?imgType=photo&key=AIzaSyBQry407hE5VwMaDedHogPuwJeIbAIidQU&cx=e51ced3f3563dfac9&q=street&searchType=image",
-        "options": {}
-      },
-      "typeVersion": 1
+      "typeVersion": 1,
+      "id": "acad70cd-ab1b-48d2-8d3d-140141dd6911"
     },
     {
-      "name": "AWS Rekognition1",
-      "type": "n8n-nodes-base.awsRekognition",
-      "position": [
-        680,
-        540
-      ],
       "parameters": {
         "type": "detectLabels",
         "binaryData": true,
         "additionalFields": {}
       },
-      "credentials": {
-        "aws": {
-          "id": "9",
-          "name": "aws"
-        }
-      },
-      "typeVersion": 1
+      "name": "AWS Rekognition1",
+      "type": "n8n-nodes-base.awsRekognition",
+      "position": [
+        192,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "509d7244-3406-4cc5-a321-465f9b7fda76"
     },
     {
+      "parameters": {
+        "authentication": "oAuth2",
+        "operation": "append",
+        "sheetId": "qwertz",
+        "options": {}
+      },
       "name": "Google Sheets2",
       "type": "n8n-nodes-base.googleSheets",
       "position": [
-        1040,
-        540
+        544,
+        0
       ],
-      "parameters": {
-        "options": {},
-        "sheetId": "qwertz",
-        "operation": "append",
-        "authentication": "oAuth2"
-      },
+      "typeVersion": 1,
+      "id": "68b9319c-0503-4896-bd34-f2f27a6c0600",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "2",
-          "name": "google_sheets_oauth"
+          "id": "yIUfSguoIBH1G2HV",
+          "name": "Google Sheets account 2"
         }
-      },
-      "typeVersion": 1
+      }
     },
     {
-      "name": "Set3",
-      "type": "n8n-nodes-base.set",
-      "position": [
-        860,
-        540
-      ],
       "parameters": {
+        "keepOnlySet": true,
         "values": {
           "number": [],
           "string": [
@@ -79,12 +72,19 @@
             }
           ]
         },
-        "options": {},
-        "keepOnlySet": true
+        "options": {}
       },
-      "typeVersion": 1
+      "name": "Set3",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        368,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "45cf3884-7f74-4a5b-827a-1bf94aac32bd"
     }
   ],
+  "pinData": {},
   "connections": {
     "Set3": {
       "main": [
@@ -119,5 +119,15 @@
         ]
       ]
     }
-  }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "326dc694-c6bc-405a-9083-791550129729",
+  "meta": {
+    "instanceId": "14efd5686d0e6fd75cadd84744d27816eccbbe5115fb07ebe92435d0e7178b22"
+  },
+  "id": "SSceHLiU6eANiqtt",
+  "tags": []
 }
